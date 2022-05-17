@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(241, 249, 252);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+main{
+    display: grid;
+    place-content: center;
+    margin:5rem;
+}
+.title{
+    text-align: center;
+    
+}
+.underline{
+    width:5rem;
+    height: 0.25rem;
+    background-color: brown;
+    margin: 1rem auto;
+}
+nav{
+    margin:1rem 0 4rem 0;
+    text-align: center;
+}
+.filter-btn {
+    background: transparent;
+    border-color: goldenrod;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin: 0 0.5rem;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    padding: 0.375rem 0.75rem;
+    color: brown;
+    cursor: pointer;
+}
+
+
+
+.food-items{
+    display:grid;
+    width:90vw;
+    max-width: 1180px;
+    grid-gap:3rem 2rem;
+    place-content: center;
+    margin: 0 5rem;
+}
+.food-item{
+   display:grid;
+   grid-gap: 1rem 2rem;
+   max-width: 20rem;
+}
+img{
+    width:200px;
+    height:200px;
+    object-fit: cover;
+}
+.food-info header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    border-bottom: 2px solid brown;
+    padding-bottom: 0.5rem;
+    font-variant-caps: all-petite-caps;
+    
+}
+.food-info p{
+    padding-top: 1rem;
+    font-size: 20px;
+    
+}
+@media(min-width:756px) {
+    .btn-container{
+        display:flex;
+        justify-content: center;
+        align-items: center;   
+    }
+     .food-items{
+    width:95vw;
+    grid-template-columns: 1fr 1fr;
+    }
+
+    .food-item{
+        grid-template-columns: 225px 1fr;
+        gap:0 0.125rem;
+        max-width: 60rem;
+    }
+
+    img{
+        height:250px;
+    }
+    
+    .food-info header{
+        font-size: 20px;
+       
+    }
+    .food-info p{
+        font-size: 17px;
+    }
+}@media(min-width:900px){
+    img{
+        height:200px;
+    }
+}
+@media(min-width:1200px){
+    img{
+        height:150px;
+    }
+}
